@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Pay-In</title>
+ 
+</head>
+<body>
+    <div class="setp" id="setp-1">
+        <div class="navbar navbar-default navbar-custom">
+            <h4 class="text-center tit">Pay-In</h4>
+            <span id="order_time">10:00</span>
+        </div>
+
+        <div class="nav">
+            <div class="contain">
+                <nav class="nav-item upi-item nav-active">UPI</nav>
+            </div>
+        </div>
+
+        <div class="centered-box">
+            <h5>
+                <span class="info-span centered-info-span">
+                    <label id="amountLabel" class="text-danger">1710.00</label>
+                </span>
+            </h5>
+        </div>
+
+        <div class="container-fluid highlight" id="bank">
+            <div class="centered-box">
+                <div class="info-box">
+                    <h5 id="upiParent">
+                        <span class="info-span bold-info-span">
+                            UPI ID:<label id="UPILabel" class="text-danger">fsfba00045568@fincarem</label>
+                        </span>
+                        <a class="btn-copy" id="UPICopyBtn" data-clipboard-text="fsfba00045568@fincarem">copy</a>
+                    </h5>
+                </div>
+
+                <div class="box margin-top-20">
+                    <input type="text" 
+                           name="channel_order_2" 
+                           placeholder="Enter UTR" 
+                           maxlength="12" 
+                           oninput="this.value=this.value.replace(/[^\d]/g,'')" 
+                           onchange="this.value=this.value.replace(/[^\d]/g,'')">
+                    <button onclick="submit()">Submit</button>
+                </div>
+
+                <p class="upi-note">Tip: Dont save the UPI, the UPI change every hour. get new UPI every time.</p>
+
+                <p class="level-2 text-danger-custom">
+                    Important reminder: After completing the UPI transaction, please backfill Ref No./UTR No. : UPI Transaction ID/Freecharge: Transaction ID (12digits).
+                </p>
+
+                <div class="text-center margin-top-20">
+                    <p>if you are not able to pay thru the current upi.. please refresh the page and pay with the new upi shown</p>
+                </div>
+
+                <div class="text-center margin-top-20">
+                    Paytm, GPay, BHIM & More
+                </div>
+
+                <div class="text-center margin-top-20">
+                    <div class="logoShow">
+                        <span><img src=".C:\Users\Fujitsu\OneDrive\Desktop\Pay-In_files\logo-1.png" alt="Logo 1"></span>
+                        <span><img src=".C:\Users\Fujitsu\OneDrive\Desktop\Pay-In_files\logo-4.png" alt="Logo 4"></span>
+                        <span><img src=".C:\Users\Fujitsu\OneDrive\Desktop\Pay-In_files\logo-5.png" alt="Logo 5"></span>
+                        <span><img src=".C:\Users\Fujitsu\OneDrive\Desktop\Pay-In_files\logo-6.png" alt="Logo 6"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
